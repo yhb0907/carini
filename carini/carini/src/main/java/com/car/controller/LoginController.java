@@ -107,8 +107,7 @@ public class LoginController {
 		List<Car> top10Cars = bookmarkService.getBookmarkTop10Cars();
 		model.addAttribute("top10Cars", top10Cars);
 		model.addAttribute("inquiry", new Inquiry());
-		
-		return "homepage/home";
+				return "homepage/home";
 	}
 	
 	/*

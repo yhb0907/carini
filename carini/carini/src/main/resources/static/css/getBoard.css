@@ -158,7 +158,7 @@ form input[type="password"],
 form input[type="submit"],
 form select,
 form textarea {
-	background: #fafafa;
+	background: white;
 	border-radius: 0.5em;
 	border: 1.5px solid white;
 	margin: 0px;
@@ -168,6 +168,10 @@ form textarea {
 form textarea {
 	min-height: 9em;
 	resize: none;
+}
+
+input [type="text"] {
+	cursor: text;
 }
 
 
@@ -451,14 +455,7 @@ a {
 }
 
 
-/* 각 종 hover들 */
-a.icon-hover:hover {
-	background-color: white;
-}
 
-.float_hover:hover {
-	background-color: whitesmoke !important;
-}
 
 
 .side-hover:hover {

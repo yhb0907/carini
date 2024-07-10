@@ -83,7 +83,7 @@
 
 <!-- 문의 글 작성하기 -->
 <div id="insertpopup" class="popup_hidden" th:object="${InquiryWriteValidation}" th:fragment="inquiry_writehtml">
-	<button id="inquiry_close-popup" class="inquiry_close-popup" onclick="closePopup()">X</button>
+	<button id="inquiry_close-popup" class="inquiry_close-popup" onclick="closePopup()"><span>X</span></button>
 	<div id="qna_header">문의하기</div>
 	<form id="form_edit" onsubmit="verifyPassword(event)" th:object="${InquiryWriteValidation}">
 		<input type="text" th:field="*{reTitle}" id="write_qna_title" placeholder="제목을 입력하세요">
@@ -114,7 +114,7 @@
 		</span>
 		<p id="q_content" class="q_section"></p>
 
-		<h3 style="text-align:center; margin-top:15px;font-size:18px; font-weight: bold;">관리자 답변</h3>
+		<p class="dap">관리자 답변</p>
 		<span class="a_section">
 			<span class="title-date" id="detailsreDateRq"></span>
 			<span id="detailsreTitleRq"></span>
