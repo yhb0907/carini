@@ -57,8 +57,8 @@
 
 
 <!--챗봇 아이콘-->
-<div id="float_icons" th:fragment="floaticon">
-	<a class="icon-hover" href="javascript:void(0);" onclick="pop()" id="qr">
+<div id="float_icons" th:fragment="floaticon" >
+	<a class="icon-hover" href="javascript:void(0);" onclick="pop()" id="qr" >
 		<img src="/img/popup.png" alt="문의" style="cursor: pointer;">
 	</a>
 </div>
@@ -69,7 +69,7 @@
 
 <div id="popup" class="popup_hidden" style="width:500px;height: 600px;" th:fragment="inquiry_Listhtml">
 	<!-- 평상시에 안보이게 -->
-	<button id="inquiry_close-popup" class="inquiry_close-popup" onclick="closePopup()">X</button>
+	<button id="inquiry_close-popup" class="inquiry_close-popup" onclick="closePopup()"><a id="x_btn">X</a></button>
 	<div id="qna_header">문의 내역</div>
 	<div class="qna_container">
 		<div id="qna_ul">
@@ -83,7 +83,7 @@
 
 <!-- 문의 글 작성하기 -->
 <div id="insertpopup" class="popup_hidden" th:object="${InquiryWriteValidation}" th:fragment="inquiry_writehtml">
-	<button id="inquiry_close-popup" class="inquiry_close-popup" onclick="closePopup()"><span>X</span></button>
+	<button id="inquiry_close-popup" class="inquiry_close-popup" onclick="closePopup()"><a id="x_btn">X</a></button>
 	<div id="qna_header">문의하기</div>
 	<form id="form_edit" onsubmit="verifyPassword(event)" th:object="${InquiryWriteValidation}">
 		<input type="text" th:field="*{reTitle}" id="write_qna_title" placeholder="제목을 입력하세요">
@@ -102,7 +102,7 @@
 
 <!-- 나의 문의 상세보기 팝업 -->
 <div id="getpopup" class="popup_hidden" th:fragment="inquiry_detailhtml">
-	<button id="inquiry_close-popup" class="inquiry_close-popup" onclick="closePopup()">X</button>
+	<button id="inquiry_close-popup" class="inquiry_close-popup" onclick="closePopup()"><a id="x_btn">X</a></button>
 
 	<div id="qna_header">상세보기</div>
 
