@@ -48,6 +48,7 @@ dependencies {
    implementation 'software.amazon.awssdk:s3:2.20.0'
    implementation 'software.amazon.awssdk:auth:2.20.0'
    implementation 'software.amazon.awssdk:regions:2.20.0'
+   testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 tasks.named('test') {
@@ -57,4 +58,10 @@ tasks.named('test') {
         events "passed", "skipped", "failed"
         showStandardStreams = true
     }
+}
+
+jar {
+    exclude 'plain/**'
+    // 또는 특정 파일을 제외하려면
+    // exclude 'plain/specificFile.txt'
 }
