@@ -32,8 +32,8 @@ def welcome():
                     "basicCard": {
                         "description": 
                         '''
-반갑습니다 고객님!!
-CARINI채널을 추가해 주셔서 감사합니다!!
+반갑습니다 고객님!
+CARINI채널을 추가해 주셔서 감사합니다!
 
 저희 CARINI는 적은 자동차 경험에 도움을 드리고 자동차 선택의 부담을 덜어드리기 위해 탄생했으며, 고객님의 요구에 맞는 자동차를 추천해드리는 기능의 챗봇입니다.
 
@@ -424,13 +424,13 @@ def sort():
 
     return responseBody
 
-file_path = './data/car_data_onlynum.csv'
+file_path = './data/car_data_onlynum1.csv'
 if os.path.exists(file_path):
     print("파일이 존재합니다.")
 else:
     print("파일이 존재하지 않습니다.")
 try:
-    df = pd.read_csv(file_path, delimiter=',', encoding='cp949')
+    df = pd.read_csv(file_path, delimiter=',', encoding='utf-8')
     print("파일을 성공적으로 읽었습니다.")
 except FileNotFoundError:
     print("파일을 찾을 수 없습니다.")
@@ -570,7 +570,7 @@ def result():
                                         {
                                             "action": "webLink",
                                             "label": "자세히 보기",
-                                            "webLinkUrl": "https://example.com/item1"
+                                            "webLinkUrl": "https://www.carini.p-e.kr/model/getModel?carId="+str(df_sort.iloc[i,14])
                                         },
                                         {
                                             "action": "share",
@@ -587,7 +587,7 @@ def result():
                                         {
                                             "action": "webLink",
                                             "label": "자세히 보기",
-                                            "webLinkUrl": "https://example.com/item1"
+                                            "webLinkUrl": "https://www.carini.p-e.kr/model/getModel?carId="+str(df_sort.iloc[i,14])
                                         },
                                         {
                                             "action": "share",
@@ -612,7 +612,7 @@ def result():
                                     {
                                         "action": "webLink",
                                         "label": "자세히 보기",
-                                        "webLinkUrl": "https://example.com/item1"
+                                        "webLinkUrl": "https://www.carini.p-e.kr/model/getModel?carId="+str(df_sort.iloc[i,14])
                                     },
                                     {
                                         "action": "share",
@@ -657,28 +657,39 @@ def result():
 def result_more():
     body = request.get_json()
     # print(body)
+    
     print("===============")
     print(data)
     # 가격 필터링
     if data["가격"]=="5000만원 미만":
+        filterMinPrice = "0";
+        filterMaxPrice = "5000";
         df_price = df[df["가격(최저가)"]<5000]
     elif data["가격"]=="5000만원이상 1억원미만":
+        filterMinPrice = "5000";
+        filterMaxPrice = "10000";
         df_price = df[(df["가격(최저가)"]>=5000) & (df["가격(최저가)"]<10000)]
     elif data["가격"]=="1억원 이상":
+        filterMinPrice = "10000";
+        filterMaxPrice = "50000";
         df_price = df[df["가격(최저가)"]>=10000]
     else:
         df_price = df
 
     # 크기 필터링
     if data["크기"] != "크기 선택안함":
+        filterSize=str(data["크기"]);
         df_size = df_price[df_price["크기"].str.split(" ").str[0] == data["크기"]]
     else:
+        filterSize="선택안함"
         df_size = df_price
 
     # 연료 필터링
     if data["연료"] != "연료 선택안함":
+        filterFuel=str(data["연료"]);
         df_fuel = df_size[df_size["연료"].str.strip().str.split(",").apply(lambda x: data["연료"] in x)]
     else:
+        filterFuel="선택안함"
         df_fuel = df_size
     df_sort = df_fuel.sort_values(by=[data["정렬"]], axis=0, ascending=False)
     print(df_sort)
@@ -694,7 +705,7 @@ def result_more():
                                 {
                                     "action": "webLink",
                                     "label": "자세히 보기",
-                                    "webLinkUrl": "https://example.com/item1"
+                                    "webLinkUrl": "https://www.carini.p-e.kr/model/getModelList?searchWord=&filterMinPrice="+filterMinPrice+"&filterMaxPrice="+filterMaxPrice+"&filterSize="+filterSize+"&filterFuel="+filterFuel+"&carSort=저가순"
                                 }
                             ]
             print(data1)
@@ -709,7 +720,7 @@ def result_more():
                                 {
                                     "action": "webLink",
                                     "label": "자세히 보기",
-                                    "webLinkUrl": "https://example.com/item1"
+                                    "webLinkUrl": "https://www.carini.p-e.kr/model/getModel?carId="+str(df_sort.iloc[i,14])
                                 },
                                 {
                                     "action": "share",
@@ -796,7 +807,7 @@ def bookmark():
                                 {
                                     "action": "webLink",
                                     "label": "자세히 보기",
-                                    "webLinkUrl": "https://example.com/item2"
+                                    "webLinkUrl": "https://www.carini.p-e.kr/model/getModel?carId="+str(df_sort.iloc[0,14])
                                 },
                                 {
                                     "action": "message",

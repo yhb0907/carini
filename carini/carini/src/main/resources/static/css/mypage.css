@@ -203,6 +203,7 @@ td {
 	border-radius: 0.5rem;
 	background-color: white;
 	color: #333;
+	margin-left: 35%;
 }
 
 
@@ -372,5 +373,5 @@ select:hover {
 }
 
 button.getout-hover:hover {
-	color: black !important;
+	color: black;
 }

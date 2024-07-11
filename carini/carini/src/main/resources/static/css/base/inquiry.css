@@ -122,7 +122,11 @@
    max-width: 150px;
    overflow: hidden;
    text-overflow: ellipsis;
-   background-color: white;
+   background-color: white !important;
+}
+
+.qna_title:hover {
+   background-color: white !important;
 }
 
 #q_date {
@@ -147,6 +151,13 @@
    align-items: center;
    justify-content: center;
    margin-left: 18px
+}
+
+.dap {
+   text-align:center;
+   margin-top:5px;
+   font-size:18px; 
+   font-weight: bold;
 }
 
 .qna_content div {
@@ -238,6 +249,7 @@
    border: 2px solid #BFBCBA;
    font-size: 15px;
    font-weight: normal;
+   cursor: text;
 }
 
 #write_qna_title {
@@ -249,12 +261,16 @@
    border: 2px solid #BFBCBA;
    font-size: 15px;
    font-weight: bolder;
+   cursor: text;
+   background-color: white;
 }
 
 #write_qna {
    border: 2px solid #BFBCBA;
    font-size: 20px;
    font-weight: bolder;
+   cursor: text;
+   background-color: white;
 }
 
 #getpopup {
@@ -346,6 +362,7 @@
    display: block;
 }
 
+
 #inquiry_close-popup {
    position: absolute;
    right: 10px;
@@ -356,7 +373,6 @@
    background-color: white;
    border: none;
 }
-
 #inquiry_close-popup:hover {
    opacity: 1;
    color: #222222;
@@ -425,26 +441,12 @@
    font-size: 15px;
    border-radius: 0.2rem;
 }
-
-
-
-#inquiry_close-popup {
-   position: absolute;
-   top: 10px;
-   right: 10px;
-   font-size: 20px;
-   width: 5px;
-   height: 5px;
-
-
-}
-
-
 .delete_qna {
    padding: 2%;
    text-align: center;
    font-weight: 700;
-   font-size: 20px
+   font-size: 20px;
+   
 }
 
 
@@ -453,12 +455,19 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   text-align: center;
+   text-align: right;
    cursor: pointer;
    border-style: none;
-   width: 20px;
+   width: 10px;
    height: 20px;
-
+}
+#inquiry_close-popup {
+   position: absolute;
+   top: 10px;
+   right: 0px;
+   font-size: 20px;
+   width: 5px;
+   height: 5px;
 }
 
 .delete_qna:hover {
