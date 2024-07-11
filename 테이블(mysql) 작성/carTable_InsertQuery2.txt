@@ -1,0 +1,818 @@
+INSERT INTO car (
+    car_name, car_min_price, car_max_price, car_avg_price, car_size, car_fuel, car_eff, car_img, 
+    car_sc_per, car_sc_price, car_sc_geoju, car_sc_quality, car_sc_design, car_sc_eff, car_sc_avg, 
+    is_bookmarked, bookmark_count
+) VALUES
+(
+    '아우디 Q4 e-트론', 6170, 6870, 6520.0, '준중형 SUV', '전기', '4.7km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230619_105%2Fauto_1687138951467LsBeI_PNG%2F20230619104221_02Lvc0JO.png', 
+    9.7, 8.5, 9.6, 9.2, 9.9, 9.4, 9.4, false, 0
+),
+(
+    '포르쉐 타이칸 크로스투리스모', 14410, 21220, 17815.0, '준대형 왜건', '전기', '2.9km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_174%2Fauto_16971829788882vx9b_PNG%2F20231013164244_CWdX6P7Y.png', 
+    9.9, 7.8, 9.0, 9.3, 9.9, 8.6, 9.1, false, 0
+),
+(
+    '포르쉐 타이칸 GTS', 18750, 18750, 18750.0, '준대형 세단', '전기', '3.2km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_13%2Fauto_1697182511330yiWXi_PNG%2F20231013163502_t2SxJ8qo.png', 
+    9.9, 9.9, 7.8, 9.0, 9.9, 8.6, 9.2, false, 0
+),
+(
+    '포르쉐 타이칸', 12990, 24740, 18865.0, '준대형 세단', '전기', '3.1km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_94%2Fauto_1697182332317AqKiH_PNG%2F20231013163159_8UtySDAP.png', 
+    9.9, 7.8, 9.0, 9.3, 9.9, 8.6, 9.1, false, 0
+),
+(
+    '포르쉐 카이맨 GTS', 13050, 13050, 13050.0, '스포츠카 쿠페', '가솔린', '8.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_139%2Fauto_16971815965932C7Xi_PNG%2F20231013161939_m3B9KCk4.png', 
+    9.8, 9.0, 6.6, 9.6, 9.9, 8.7, 8.9, false, 0
+),
+(
+    '포르쉐 박스터 GTS', 13530, 13530, 13530.0, '스포츠카 컨버터블', '가솔린', '8.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_277%2Fauto_1697181731940PNWrb_PNG%2F20231013162202_BPmTUflU.png', 
+    9.8, 9.2, 7.3, 9.4, 9.8, 8.1, 8.9, false, 0
+),
+(
+   '포르쉐 마칸 GTS', 12700, 12700, 12700.0, '중형 SUV', '가솔린', '7.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_67%2Fauto_1697181326489L6dTR_PNG%2F20231013161519_dq0NmpMa.png', 
+    9.7, 8.6, 9.0, 9.5, 9.8, 8.4, 9.2, false, 0
+),
+(
+    '포르쉐 마칸', 10780, 10780, 10780.0, '중형 SUV', '가솔린', '7.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_234%2Fauto_1697181233702MfAfe_PNG%2F20231013161343_MNqrhYFy.png', 
+    9.7, 8.6, 9.0, 9.5, 9.8, 8.4, 9.2, false, 0
+),
+(
+    '포르쉐 911 터보 카브리올레', 32600, 32600, 32600.0, '스포츠카 컨버터블', '가솔린', '6.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_259%2Fauto_1697181101284905k4_PNG%2F20231013161128_mxgK1VBA.png', 
+    9.8, 8.3, 8.4, 9.2, 9.8, 8.3, 9.0, false, 0
+),
+(
+    '포르쉐 911 터보', 31040, 31040, 31040.0, '스포츠카 쿠페', '가솔린', '6.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_186%2Fauto_1697180981854w84DF_PNG%2F20231013160931_dI3E4w2S.png', 
+    9.8, 8.3, 8.4, 9.2, 9.8, 8.3, 9.0, false, 0
+),
+(
+    '포르쉐 911 타르가 GTS', 24190, 26990, 25590.0, '스포츠카 컨버터블', '가솔린', '7.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_84%2Fauto_1697180819992JIVrU_PNG%2F20231013160646_l4tnBv7F.png', 
+    9.8, 8.3, 8.4, 9.2, 9.8, 8.3, 9.0, false, 0
+),
+(
+    '포르쉐 911 타르가', 19620, 21350, 20485.0, '스포츠카 컨버터블', '가솔린', '8.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_46%2Fauto_1697180656982O74PN_PNG%2F20231013160405_g7o5CNOo.png', 
+    9.8, 8.3, 8.4, 9.2, 9.8, 8.3, 9.0, false, 0
+),
+(
+    '포르쉐 911 카레라 카브리올레', 18700, 21290, 19995.0, '스포츠카 컨버터블', '가솔린', '8.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_22%2Fauto_1697180446768LMNaO_PNG%2F20231013160034_jAHFHmpS.png', 
+    9.8, 8.3, 8.4, 9.2, 9.8, 8.3, 9.0, false, 0
+),
+(
+    '포르쉐 911 카레라 GTS 카브리올레', 23270, 24190, 23730.0, '스포츠카 컨버터블', '가솔린', '8.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_153%2Fauto_1697179906120cwRfo_PNG%2F20231013155132_g0iqhnAT.png', 
+    9.8, 8.3, 8.4, 9.2, 9.8, 8.3, 9.0, false, 0
+),
+(
+    '포르쉐 911 카레라 GTS', 21690, 22610, 22150.0, '스포츠카 쿠페', '가솔린', '8.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_176%2Fauto_1697179665408yIeWr_PNG%2F20231013154734_gL85RQkJ.png', 
+    9.8, 8.3, 8.4, 9.2, 9.8, 8.3, 9.0, false, 0
+),
+(
+    '포르쉐 911 카레라', 17110, 19770, 18440.0, '스포츠카 쿠페', '가솔린', '8.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_6%2Fauto_1697179415021lMRwG_PNG%2F20231013154318_fNdIqAKG.png', 
+    9.8, 8.3, 8.4, 9.2, 9.8, 8.3, 9.0, false, 0
+),
+(
+    '포르쉐 911 GT3', 25160, 25160, 25160.0, '스포츠카 쿠페', '가솔린', '6.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231013_188%2Fauto_1697178952478HkBru_PNG%2F20231013153537_C4zy0DLL.png', 
+    9.8, 8.3, 8.4, 9.2, 9.8, 8.3, 9.0, false, 0
+),
+(
+    '제네시스 일렉트리파이드 GV70', 7332, 7332, 7332.0, '중형 SUV', '전기', '4.6km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230725_208%2Fauto_1690248274999p2PBY_PNG%2F20230725102426_rCC4UZR0.png', 
+    9.8, 7.3, 9.3, 9.6, 9.7, 8.6, 9.1, false, 0
+),
+(
+    '기아 스포티지 하이브리드', 3213, 4054, 3633.5, '준중형 SUV', '가솔린,하이브리드', '16.7km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231012_198%2Fauto_1697073683630sAps7_PNG%2F20231012102117_Fbrq8eXE.png', 
+    9.4, 7.0, 9.2, 9.0, 9.5, 9.1, 8.9, false, 0
+),
+(
+    '기아 스포티지', 2537, 3892, 3214.5, '준중형 SUV', 'LPG,가솔린,디젤', '14.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230718_102%2Fauto_1689641714508jz1SM_PNG%2F20230718095508_E6QIQj9h.png', 
+    8.9, 7.7, 9.2, 8.8, 9.6, 7.9, 8.7, false, 0
+),
+(
+    '쉐보레 트레일블레이저', 2699, 3339, 3019.0, '소형 SUV', '가솔린', '12.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230719_266%2Fauto_1689746786252GaguN_PNG%2F20230719150624_9wsxIUZ8.png', 
+    9.6, 7.3, 8.7, 9.0, 9.9, 8.6, 8.9, false, 0
+),
+(
+    '기아 모닝', 1290, 1655, 1472.5, '경형 해치백', '가솔린', '15.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230830_272%2Fauto_1693370317256gtoJa_PNG%2F20230830133831_U6CYJLma.png', 
+    8.2, 7.6, 9.1, 8.1, 9.8, 8.9, 8.6, false, 0
+),
+(
+    '기아 K3 GT', 2784, 2784, 2784.0, '준중형 해치백', '가솔린', '12.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230719_148%2Fauto_1689726787657iwNYz_PNG%2F20230719093301_CL4QAUFI.png', 
+    9.2, 8.9, 9.0, 9.1, 9.6, 8.9, 9.1, false, 0
+),
+(
+    '기아 K3', 1825, 2507, 2166.0, '준중형 세단', '가솔린', '15.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230719_148%2Fauto_1689726763419bQ4Pe_PNG%2F20230719093236_4YHS6xhY.png', 
+    9.2, 8.9, 9.0, 9.1, 9.6, 8.9, 9.1, false, 0
+),
+(
+    'BMW i4 M50', 8490, 9100, 8795.0, '중형 세단', '전기', '4.1km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230830_261%2Fauto_16933799165360rHNx_PNG%2F20230830161835_efoxSrIE.png', 
+    9.9, 9.2, 8.2, 9.6, 9.8, 9.4, 9.4, false, 0
+),
+(
+    'BMW i4', 8110, 8480, 8295.0, '중형 세단', '전기', '4.6km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230830_15%2Fauto_1693379367916NLI9u_PNG%2F20230830160926_jCc2yYRU.png', 
+    9.9, 9.2, 8.2, 9.6, 9.8, 9.4, 9.4, false, 0
+),
+(
+    'BMW X7', 14720, 18080, 16400.0, '대형 SUV', '가솔린,디젤', '10km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230706_255%2Fauto_1688618684327J5zgj_PNG%2F20230706134436_3DpO4749.png', 
+    9.8, 9.1, 9.7, 9.6, 9.7, 8.1, 9.3, false, 0
+),
+(
+    'BMW X6', 12580, 15910, 14245.0, '준대형 SUV', '가솔린,디젤', '11.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230830_181%2Fauto_1693381915993jta0z_PNG%2F20230830165155_PJglpq2l.png', 
+    9.8, 8.2, 8.6, 9.4, 9.9, 7.9, 9.0, false, 0
+),
+(
+    'BMW X5 플러그인 하이브리드', 12800, 14360, 13580.0, '준대형 SUV', '전기, 가솔린', '13.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230830_151%2Fauto_1693381122068pPNeb_PNG%2F20230830163840_UF2aovUe.png', 
+    9.8, 8.2, 9.1, 9.6, 9.7, 8.5, 9.2, false, 0
+),
+(
+    'BMW X5', 11610, 15800, 13705.0, '준대형 SUV', '가솔린,디젤', '11.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230208_258%2Fauto_1675828261297QnsIm_PNG%2F20230208125050_RAh9fLeN.png', 
+    9.8, 8.2, 9.1, 9.6, 9.7, 8.5, 9.2, false, 0
+),
+(
+    'M4 컨버터블', 14070, 14070, 14070.0, '중형 컨버터블', '가솔린', '8.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230706_113%2Fauto_1688618351124vRO1B_PNG%2F20230706133900_8y9J7OZZ.png', 
+    9.9, 7.5, 8.7, 9.2, 9.3, 6.8, 8.6, false, 0
+),
+(
+    'BMW M4', 13640, 14300, 13970.0, '중형 쿠페', '가솔린', '8.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230706_277%2Fauto_1688618230738nfPNc_PNG%2F20230706133702_xCMNRSON.png', 
+    9.9, 7.5, 8.7, 9.2, 9.3, 6.8, 8.6, false, 0
+),
+(
+    'BMW M2', 8990, 8990, 8990.0, '준중형 쿠페', '가솔린', '8.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221012_15%2Fauto_1665544132876y8Nmf_PNG%2F20221012120840_Ijgg5VdZ.png', 
+    10, 8.2, 7, 8.2, 8.2, 6.6, 8.0, false, 0
+),
+(
+    'BMW 4시리즈 컨버터블', 7580, 9780, 8680.0, '중형 컨버터블', '가솔린', '11.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230706_234%2Fauto_1688617783455gW6r3_PNG%2F20230706132929_9z6QWSb1.png', 
+    9.7, 9, 8.8, 9.6, 9.8, 8.6, 9.3, false, 0
+),
+(
+    'BMW 4시리즈 그란쿠페', 6220, 6700, 6460.0, '중형 세단', '가솔린,디젤', '15km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230706_198%2Fauto_1688617649576SfX1D_PNG%2F20230706132721_UTw0oCRg.png', 
+    9.7, 9, 8.8, 9.6, 9.8, 8.6, 9.3, false, 0
+),
+(
+    'BMW 4시리즈', 6700, 9210, 7955.0, '중형 쿠페', '가솔린', '11.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230706_73%2Fauto_1688617501924wAnb2_PNG%2F20230706132447_WYwi9rLx.png', 
+    9.7, 9, 8.8, 9.6, 9.8, 8.6, 9.3, false, 0
+),
+(
+    '폭스바겐 티구안', 4548, 4961, 4754.5, '준중형 SUV', '디젤', '15.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20240425_130%2Fauto_1714017438521J6qGF_PNG%2F20240425125717_PlfaHq2R.png', 
+    9.2, 9.1, 9, 9.1, 9.3, 9.3, 9.2, false, 0
+),
+(
+    '폭스바겐 아테온', 5880, 6370, 6125.0, '중형 세단', '디젤', '15.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20240425_139%2Fauto_17140170494057K0Gk_PNG%2F20240425125040_ioz5qiLK.png', 
+    9.5, 9.3, 9.3, 8.7, 9.9, 9.8, 9.4, false, 0
+),
+(
+    '폭스바겐 골프 GTI', 4970, 4970, 4970.0, '준중형 해치백', '가솔린', '11.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230712_245%2Fauto_1689125727223noi5q_PNG%2F20230712103519_i0AKdAjo.png', 
+    9.5, 8.7, 8.7, 9, 9.4, 9.5, 9.1, false, 0
+),
+(
+    '토요타 하이랜더 하이브리드', 6660, 7470, 7065.0, '준대형 SUV', '가솔린,하이브리드', '13.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230725_257%2Fauto_1690266025500KmR9f_PNG%2F20230725152019_ryF8f78n.png', 
+    9.8, 8.4, 9.9, 9.5, 8.9, 9.9, 9.4, false, 0
+),
+(
+    '캐딜락 XT5', 6910, 7710, 7310.0, '중형 SUV', '가솔린', '8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231024_279%2Fauto_1698123406585eb64e_PNG%2F20231024135636_3wIBldSS.png', 
+    9.5, 9, 9.3, 9, 9.6, 6.9, 8.9, false, 0
+),
+(
+    '캐딜락 CT5-V', 14000, 14000, 14000.0, '준대형 세단', '가솔린', '6.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231024_107%2Fauto_1698123270754WzcVM_PNG%2F20231024135422_3alzAOso.png', 
+    10, 10, 10, 10, 10, 7.3, 9.6, false, 0
+),
+(
+    '캐딜락 CT5', 5640, 6140, 5890.0, '준대형 세단', '가솔린', '10.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231024_129%2Fauto_1698123173378BEFHv_PNG%2F20231024135242_bZUpBISo.png', 
+    10, 10, 10, 10, 10, 7.3, 9.6, false, 0
+),
+(
+    '아우디 S8 L', 21630, 21630, 21630.0, '대형 세단', '가솔린', '7.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230706_127%2Fauto_1688617199288eDnc2_PNG%2F20230706131947_TkYOr2zB.png', 
+    10, 10, 10, 8, 10, 4, 8.7, false, 0
+),
+(
+    '현대 아반떼 N', 3352, 3560, 3456.0, '준중형 세단', '가솔린', '10.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230726_283%2Fauto_16903362266313M5UF_PNG%2F20230726105020_MDd11Slx.png', 
+    10, 9.7, 9.5, 8.6, 9.8, 7.9, 9.3, false, 0
+),
+(
+    '메르세데스-EQ EQE SUV', 10990, 12850, 11920.0, '준대형 SUV', '전기', '3.8km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221018_105%2Fauto_1666069706744wPvf9_PNG%2F20221018140815_Auhvq7R0.png', 
+    9.3, 7.8, 9.8, 9.5, 7.3, 9, 8.8, false, 0
+),
+(
+    '마이브 M1', 1892, 1892, 1892.0, '경형 해치백', '전기', '5.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230706_171%2Fauto_1688605870100PCPd2_PNG%2F20230706101100_xwgY8xVn.png', 
+    8.0, 7.9, 7.6, 6.3, 9.5, 7.5, 7.8, false, 0
+),
+(
+    '마세라티 콰트로포르테', 19000, 31200, 25100.0, '대형 세단', '가솔린', '7.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20240213_90%2Fauto_1707810954652U7Kre_PNG%2F20240213165546_G8ncLXH3.png', 
+    8.1, 7.2, 8.7, 8.5, 9.9, 6.0, 8.2, false, 0
+),
+(
+    '마세라티 르반떼', 15200, 24500, 19850.0, '준대형 SUV', '가솔린', '7.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20240213_256%2Fauto_1707810790801D2U0B_PNG%2F20240213165302_XiBYbzgm.png', 
+    9.0, 7.5, 8.5, 9.0, 9.8, 5.9, 8.4, false, 0
+),
+(
+    '마세라티 기블리', 13600, 20200, 16900.0, '준대형 세단', '가솔린', '8.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20240213_47%2Fauto_1707810619501QUWAf_PNG%2F20240213165010_S5yt2yBw.png', 
+    8.4, 7.9, 7.7, 8.4, 9.9, 6.6, 8.3, false, 0
+),
+(
+    '마세라티 MC20', 33700, 33700, 33700.0, '스포츠카 쿠페', '가솔린', '7km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230706_193%2Fauto_16886101757584XDU2_PNG%2F20230706112244_tIFbLX5k.png', 
+    5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, false, 0
+),
+(
+    '현대 팰리세이드', 3896, 5491, 4693.5, '준대형 SUV', '가솔린,디젤', '12.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230602_298%2Fauto_1685665402236fgsC9_PNG%2F20230602092312_wlHenVQq.png', 
+    9.3, 8.6, 9.6, 9.3, 9.5, 7.1, 8.9, false, 0
+),
+(
+    'KGM 티볼리 에어', 2312, 2719, 2515.5, '소형 SUV', '가솔린', '12km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230601_154%2Fauto_1685585503161yAJHO_PNG%2F20230601111135_2mM6KkxI.png', 
+    8.0, 7.7, 6.7, 8.0, 8.0, 7.0, 7.9, false, 0
+),
+(
+    'KGM 티볼리', 1898, 2807, 2352.5, '소형 SUV', '가솔린', '12km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230601_1%2Fauto_1685582924851ArG94_PNG%2F20230601102837_PRlHuhFR.png', 
+    8.0, 7.7, 6.7, 8.0, 8.0, 7.0, 7.9, false, 0
+),
+(
+    '미니 해치백 S 5도어', 4860, 4990, 4925.0, '소형 해치백', '가솔린', '12.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_163%2Fauto_1686641790051SXNjL_PNG%2F20230613163622_gKfgRJVX.png', 
+    8.5, 7.8, 7.2, 8.5, 9.8, 8.3, 8.5, false, 0
+),
+(
+    '미니 해치백 S', 4670, 4850, 4760.0, '소형 해치백', '가솔린', '12.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_296%2Fauto_1686641738868xGMT5_PNG%2F20230613163530_0S2RO5qK.png', 
+    8.5, 7.8, 7.2, 8.5, 9.8, 8.3, 8.5, false, 0
+),
+(
+    '미니 해치백 JCW', 5500, 5500, 5500.0, '소형 해치백', '가솔린', '11.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_283%2Fauto_1686641626177axpdj_PNG%2F20230613163338_KXtQAXby.png', 
+    8.5, 7.8, 7.2, 8.5, 9.8, 8.3, 8.5, false, 0
+),
+(
+    '미니 해치백 5도어', 4200, 4200, 4200.0, '소형 해치백', '가솔린', '12.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_43%2Fauto_1686641559401dMOzX_PNG%2F20230613163231_IqMHFRTM.png', 
+    8.5, 7.8, 7.2, 8.5, 9.8, 8.3, 8.5, false, 0
+),
+(
+    '미니 해치백', 3660, 4040, 3850.0, '소형 해치백', '가솔린', '13.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_59%2Fauto_16866414333940SsDI_PNG%2F20230613163026_s5nj4t6R.png', 
+    8.5, 7.8, 7.2, 8.5, 9.8, 8.3, 8.5, false, 0
+),
+(
+    '미니 클럽맨 S', 5230, 5520, 5375.0, '소형 왜건', '가솔린', '10.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_127%2Fauto_1686641325877yjgUd_PNG%2F20230613162838_VNlwMw3R.png', 
+    8.6, 7.9, 7.8, 8.6, 9.7, 8.1, 8.6, false, 0
+),
+(
+    '미니 클럽맨 JCW', 6320, 6340, 6330.0, '소형 왜건', '가솔린', '9.7km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_177%2Fauto_1686641262496nRI1g_PNG%2F20230613162733_3YopzXwY.png', 
+    8.6, 7.9, 7.8, 8.6, 9.7, 8.1, 8.6, false, 0
+),
+(
+    '미니 클럽맨', 4370, 4700, 4535.0, '소형 왜건', '가솔린', '11.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_222%2Fauto_1686641126457rVLgO_PNG%2F20230613162518_Xnh6d0Vr.png', 
+    8.6, 7.9, 7.8, 8.6, 9.7, 8.1, 8.6, false, 0
+),
+(
+    '미니 컨트리맨 S', 5650, 5730, 5690.0, '소형 SUV', '가솔린', '10.7km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_20%2Fauto_1686640993541Ysi5b_PNG%2F20230613162304_1ARciBca.png', 
+    8.9, 7.6, 8.3, 8.9, 9.8, 8.2, 8.7, false, 0
+),
+(
+    '미니 컨트리맨 JCW', 6550, 6550, 6550.0, '소형 SUV', '가솔린', '10.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_283%2Fauto_16866410536899kTVK_PNG%2F20230613162406_QIZ3Gfl9.png', 
+    8.9, 7.6, 8.3, 8.9, 9.8, 8.2, 8.7, false, 0
+),
+(
+    '미니 컨트리맨', 4890, 4990, 4940.0, '소형 SUV', '가솔린', '11.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_63%2Fauto_1686640892159tDu59_PNG%2F20230613162121_HPlYkwao.png', 
+    8.9, 7.6, 8.3, 8.9, 9.8, 8.2, 8.7, false, 0
+),
+(
+    '미니 컨버터블 S', 5270, 5270, 5270.0, '소형 컨버터블', '가솔린', '12km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_4%2Fauto_16866408051196drr7_PNG%2F20230613161956_3IFHe5kV.png', 
+    8.2, 7.9, 6.9, 8.2, 9.8, 8.0, 8.4, false, 0
+),
+(
+    '미니 컨버터블 JCW', 5930, 5930, 5930.0, '소형 컨버터블', '가솔린', '11.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_204%2Fauto_1686640589693zqBH0_PNG%2F20230613161621_LCi7f0Oa.png', 
+    9.5, 7.9, 6.9, 8.2, 9.8, 8.0, 8.4, false, 0
+),
+(
+    '미니 컨버터블', 4700, 4700, 4700.0, '소형 컨버터블', '가솔린', '12.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230613_97%2Fauto_1686640302773kUXS2_PNG%2F20230613161129_hujX7zlN.png', 
+    9.5, 7.9, 6.9, 8.2, 9.8, 8.0, 8.4, false, 0
+),
+(
+    '기아 모하비', 5054, 5993, 5523.5, '준대형 SUV', '디젤', '9.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230601_22%2Fauto_1685586239443XNqA4_PNG%2F20230601112353_KfeNPXbP.png', 
+    9.3, 8.1, 9.0, 9.0, 9.5, 6.6, 8.6, false, 0
+),
+(
+    '현대 넥쏘', 6950, 6950, 6950.0, '중형 SUV', '전기,수소', '96.2km/kg', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230609_91%2Fauto_1686271870675BEwRW_PNG%2F20230609095104_QYxQ6cTX.png', 
+    9.6, 8.8, 8.9, 8.8, 9.1, 9.3, 9.1, false, 0
+),
+(
+    '기아 EV9', 7337, 8397, 7867.0, '준대형 SUV', '전기', '4.2km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230830_51%2Fauto_1693370289914NbAUe_PNG%2F20230830133804_8YQK6VWz.png', 
+    9.7, 7.2, 9.6, 9.2, 9.6, 9.4, 9.1, false, 0
+),
+(
+    '폭스바겐 ID.4', 5490, 5990, 5740.0, '준중형 SUV', '전기', '4.9km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230628_170%2Fauto_1687914928699U6KlD_PNG%2F20230628101516_3bbDDJA7.png', 
+    9.8, 9.7, 9.6, 9.4, 9.7, 9.3, 9.6, false, 0
+),
+(
+    '렉서스 RZ', 8490, 9300, 8895.0, '중형 SUV', '전기', '5.4km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230621_218%2Fauto_1687311509572LMG53_PNG%2F20230621103816_j9NOs4uq.png', 
+    9.7, 7.1, 9.8, 8.6, 8.8, 9.7, 9.0, false, 0
+),
+(
+    '렉서스 RX 하이브리드', 9870, 9870, 9870.0, '준대형 SUV', '가솔린,하이브리드', '13.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230621_139%2Fauto_1687312709448e14KV_PNG%2F20230621105818_9Eo1YPji.png', 
+    9.1, 8.7, 10.0, 10.0, 9.6, 10.0, 9.6, false, 0
+),
+(
+    '렉서스 RX 플러그인 하이브리드', 10993, 10993, 10993.0, '준대형 SUV', '전기,가솔린,하이브리드', '14km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230621_275%2Fauto_1687313039639FAiz0_PNG%2F20230621110345_C4AcGENE.png', 
+    9.1, 8.7, 10.0, 10.0, 9.6, 10.0, 9.6, false, 0
+),
+(
+    '푸조 2008', 2600, 3100, 2850.0, '소형 SUV', '디젤', '4.2km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230508_297%2Fauto_1683511188977Q1KtT_PNG%2F20230508105939_SEXeEm1o.png', 
+    8.5, 8.7, 9.5, 7.5, 8.9, 7.8, 8.4, false, 0
+),
+(
+    '현대 쏘나타 하이브리드', 3187, 3921, 3554.0, '중형 세단', '가솔린,하이브리드', '19.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230503_234%2Fauto_1683080227521ofo65_PNG%2F20230503111658_Xww80eJY.png', 
+    9.6, 7.4, 9.5, 9.6, 9.6, 9.3, 9.2, false, 0
+),
+(
+    '현대 쏘나타', 2808, 3917, 3362.5, '중형 세단', 'LPG,가솔린', '13.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230503_144%2Fauto_1683080196979gP0vc_PNG%2F20230503111631_b0ABwRey.png', 
+    9.6, 8.0, 9.4, 9.2, 9.5, 8.4, 9.0, false, 0
+),
+(
+    '기아 셀토스', 2087, 2903, 2495.0, '소형 SUV', '가솔린', '12.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230502_286%2Fauto_1682989240407CfIwn_PNG%2F20230502100034_BJI4ZMFK.png', 
+    9.1, 8.0, 9.0, 8.8, 9.6, 7.4, 8.7, false, 0
+),
+(
+    'KGM 렉스턴 스포츠 칸', 3104, 4246, 3675.0, '준대형 트럭', '디젤', '10.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230515_50%2Fauto_1684115973751vKj0O_PNG%2F20230515105926_LxrTX71Q.png', 
+    9.4, 7.6, 7.8, 8.6, 9.2, 6.9, 8.3, false, 0
+),
+(
+    'KGM 렉스턴 스포츠', 2879, 4031, 3455.0, '준대형 트럭', '디젤', '10.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230515_264%2Fauto_1684115943653qpcuR_PNG%2F20230515105854_rUBVpEWm.png', 
+    8.8, 7.5, 8.4, 8.1, 9.7, 7.6, 8.4, false, 0
+),
+(
+    'KGM 렉스턴', 4010, 6050, 5030.0, '준대형 SUV', '디젤', '11.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230515_253%2Fauto_1684115900692wVuFw_PNG%2F20230515105814_GUI7oyxe.png', 
+    9.3, 8.7, 9.4, 8.9, 9.7, 8.7, 9.1, false, 0
+),
+(
+    '링컨 네비게이터', 15200, 15200, 15200.0, '대형 SUV', '가솔린', '7.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230526_30%2Fauto_16850758843243tr6s_PNG%2F20230526133756_FE6yEg8Z.png', 
+    9.5, 8.8, 9.2, 8.8, 9.3, 5.7, 8.6, false, 0
+),
+(
+    '제네시스 G70 슈팅브레이크', 4545, 4792, 4668.5, '중형 왜건', '가솔린', '10.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230519_66%2Fauto_1684457507007kwJAF_PNG%2F20230519095141_KfyNQwgl.png', 
+    9.6, 7.9, 7.8, 9.1, 9.4, 6.2, 8.3, false, 0
+),
+(
+    '제네시스 G70', 4347, 5089, 4718.0, '중형 세단', '가솔린', '11.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230519_105%2Fauto_1684457482433tIsP9_PNG%2F20230519095117_i57QfW2f.png', 
+    9.6, 7.9, 7.8, 9.1, 9.4, 6.2, 8.3, false, 0
+),
+(
+    '르노코리아 SM6', 2925, 3695, 3310.0, '중형 세단', 'LPG,가솔린', '13.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230406_243%2Fauto_16807511190486yMe2_PNG%2F20230406121833_OvF36Xuo.png', 
+    9.3, 8.4, 8.8, 8.8, 9.6, 8.5, 8.9, false, 0
+),
+(
+    '푸조 e-208', 4900, 5300, 5100.0, '소형 해치백', '전기', '5.4km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230419_41%2Fauto_1681878998380XNhTw_PNG%2F20230419133628_orZ30DzS.png', 
+    9.7, 9.1, 8.3, 9.2, 9.9, 7.8, 9.0, false, 0
+),
+(
+    '포드 익스페디션', 11270, 11270, 11270.0, '대형 SUV', '가솔린', '7.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230707_27%2Fauto_1688701026454lPjQn_PNG%2F20230707123653_Di9bQKO2.png', 
+    9.8, 9.5, 9.5, 9.3, 9.6, 7.6, 9.2, false, 0
+),
+(
+    '포드 브롱코 4도어', 8160, 8160, 8160.0, '중형 SUV', '가솔린', '8.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230615_128%2Fauto_168679581412111anR_PNG%2F20230615112325_DQal8gJa.png', 
+    9.7, 9.1, 8.7, 8.9, 10, 6.4, 8.8, false, 0
+),
+(
+    '현대 캐스퍼', 1375, 1960, 1667.5, '경형 SUV', '가솔린', '14.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230427_77%2Fauto_1682562585238TVCgm_PNG%2F20230427112937_r4udc5ai.png', 
+    9, 7.1, 8.6, 8.4, 9.6, 7.4, 8.4, false, 0
+),
+(
+    '메르세데스-벤츠 AMG EQE', 14520, 14520, 14520.0, '준대형 세단', '전기', '3.3km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230410_120%2Fauto_1681093958319kMub1_PNG%2F20230410113226_vqeq998M.png', 
+    9.6, 7.9, 9.5, 9.5, 9.6, 9.6, 9.3, false, 0
+),
+(
+    '마세라티 MC20 첼로', 38300, 38300, 38300.0, '스포츠카 컨버터블', '가솔린', '7.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230404_118%2Fauto_168057189021514U8I_PNG%2F20230404103115_yaTzIwh3.png', 
+    5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, false, 0
+),
+(
+    'BYD T4K', 4669, 4669, 4669.0, '중형 트럭', '전기', '2.6km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20231213_298%2Fauto_1702441180250kDQko_PNG%2F20231213131926_ErI9eUwt.png', 
+    5.5, 5.5, 4, 5.5, 10, 5.5, 6, false, 0
+),
+(
+    '폭스바겐 투아렉', 8990, 10590, 9790.0, '준대형 SUV', '디젤', '10.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230223_254%2Fauto_1677115751717SAJK2_PNG%2F20230223102909_tTFw0Nwx.png', 
+    9.8, 9.3, 9.5, 9.3, 9.3, 9.2, 9.4, false, 0
+),
+(
+    '포드 익스플로러 하이브리드', 8195, 8195, 8195.0, '준대형 SUV', '가솔린,하이브리드', '10.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230707_185%2Fauto_1688700780910FcilA_PNG%2F20230707123247_GPJUj7Sa.png', 
+    9.5, 9.2, 9.2, 8.3, 9.3, 7.2, 8.8, false, 0
+),
+(
+    '포드 익스플로러', 6865, 7895, 7380.0, '준대형 SUV', '가솔린', '8.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230707_235%2Fauto_1688700707830TLjrw_PNG%2F20230707123146_nlBEbv1v.png', 
+    9.5, 9.2, 9.2, 8.3, 9.3, 7.2, 8.8, false, 0
+),
+(
+    '아우디 RS5 스포트백', 12808, 12808, 12808.0, '중형 세단', '가솔린', '8.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230331_171%2Fauto_16802388973948CA4I_PNG%2F20230331140121_xpWVveuJ.png', 
+    9.8, 9.5, 9, 9, 9.4, 7.5, 9, false, 0
+),
+(
+    '현대 아반떼 하이브리드', 2466, 3153, 2809.5, '준중형 세단', '가솔린,하이브리드', '21.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230313_102%2Fauto_1678674773994uu1VN_PNG%2F20230313113247_nnmh3xQQ.png', 
+    9.5, 9.5, 9.5, 9.3, 9.9, 9.6, 9.6, false, 0
+),
+(
+    '현대 아반떼', 1975, 2818, 2396.5, '준중형 세단', 'LPG,가솔린', '15.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230313_207%2Fauto_16786747485797iQ8a_PNG%2F20230313113222_FUY4dToD.png', 
+    9.2, 7.8, 9.3, 8.9, 9.6, 9.4, 9.6, false, 0
+),
+(
+    '기아 니로 하이브리드', 2713, 3376, 3044.5, '소형 SUV', '가솔린,하이브리드', '20.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230201_5%2Fauto_167521551469820cJ2_PNG%2F20230201103828_1TU43S80.png', 
+    9.3, 9.7, 8.8, 8.9, 9.1, 9.9, 9.3, false, 0
+),
+(
+    '기아 니로 플러스', 4755, 4850, 4802.5, '소형 SUV', '전기', '5.3km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230208_226%2Fauto_1675816576423hWFSw_PNG%2F20230208093603_x44xFQFx.png', 
+    9.1, 9.1, 8.3, 8.9, 7.3, 9.5, 8.7, false, 0
+),
+(
+    '기아 니로 EV', 4855, 5120, 4987.5, '소형 SUV', '전기', '5.3km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230201_264%2Fauto_167521556121166rN8_PNG%2F20230201103913_5mftPLRf.png', 
+    9.5, 8.1, 8.9, 8.6, 8.7, 8.6, 8.7, false, 0
+),
+(
+    '푸조 e-2008', 5290, 5490, 5390.0, '소형 SUV', '전기', '4.9km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230224_197%2Fauto_16772198103922oM9w_PNG%2F20230224152319_sZFZWEfB.png', 
+    9.7, 8.8, 8.9, 9.1, 9.8, 7.4, 9.0, false, 0
+),
+(
+    '푸조 308', 3650, 4020, 3835.0, '준중형 해치백', '디젤', '17.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230106_31%2Fauto_1672980368480vU4AG_PNG%2F20230106134558_vMRMl8yi.png', 
+    9.5, 7.3, 8.2, 8.5, 10, 9.5, 8.8, false, 0
+),
+(
+    '토요타 캠리 하이브리드', 3900, 4520, 4210.0, '중형 세단', '가솔린,하이브리드', '18.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230126_113%2Fauto_1674703010903KsogS_PNG%2F20230126121641_fKkZa9DW.png', 
+    9.5, 9.1, 9.2, 9.6, 9.2, 9.5, 9.4, false, 0
+),
+(
+    '토요타 캠리', 3768, 3768, 3768.0, '중형 세단', '가솔린', '12.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230126_23%2Fauto_1674702560371CXMiL_PNG%2F20230126120910_pYoYSWYF.png', 
+    9.1, 8.3, 9.5, 8.1, 8.9, 9.7, 8.9, false, 0
+),
+(
+    '토요타 시에나 하이브리드', 7050, 7060, 7055.0, '대형 RV', '가솔린,하이브리드', '14.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230126_236%2Fauto_1674700112067EBrV0_PNG%2F20230126112820_lBifX9Yw.png', 
+    9.5, 7.7, 9.7, 8.8, 9.2, 9.7, 9.1, false, 0
+),
+(
+    '아우디 e-트론 S 스포트백', 14122, 14122, 14122.0, '준대형 SUV', '전기', '2.7km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230126_189%2Fauto_16747151651025cooj_PNG%2F20230126153915_OfmWpJp2.png', 
+    10.0, 9.3, 10.0, 10.0, 10.0, 8.7, 9.7, false, 0
+),
+(
+    '아우디 e-트론 S', 13722, 13722, 13722.0, '준대형 SUV', '전기', '2.7km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230126_110%2Fauto_1674714990970VPioz_PNG%2F20230126153623_cS65Bph5.png', 
+    9.9, 9.6, 8.3, 9.5, 8.1, 8.9, 9.1, false, 0
+),
+(
+    '아우디 SQ5 스포트백', 9996, 9996, 9996.0, '중형 SUV', '가솔린', '8.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230126_178%2Fauto_16747164648357nuSs_PNG%2F20230126160057_pvkNTFbz.png', 
+    9.8, 8.8, 9.2, 9.6, 9.8, 7.0, 9.0, false, 0
+),
+(
+    '아우디 SQ5', 9699, 9699, 9699.0, '중형 SUV', '가솔린', '8.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230126_258%2Fauto_1674716259544EW6rz_PNG%2F20230126155728_ZjUZ5DjQ.png', 
+    8.9, 9.1, 9.9, 9.0, 8.9, 9.9, 9.3, false, 0
+),
+(
+    '아우디 Q2', 4090, 4440, 4265.0, '소형 SUV', '디젤', '16.7km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230117_266%2Fauto_1673921927368VeSPh_PNG%2F20230117111838_24nfg3pO.png', 
+    9.0, 7.9, 8.1, 7.5, 9.1, 9.7, 8.6, false, 0
+),
+(
+    '아우디 A8', 14038, 14440, 14239.0, '대형 세단', '디젤', '11.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230126_45%2Fauto_1674714510241NzG4i_PNG%2F20230126152823_FXPygjVg.png', 
+    9.8, 9.7, 9.9, 9.3, 9.8, 9.2, 9.6, false, 0
+),
+(
+    '메르세데스-벤츠 EQS SUV', 15500, 18650, 17075.0, '대형 SUV', '전기', '3.6km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230131_197%2Fauto_1675130342698eKyOP_PNG%2F20230131105852_lQNWB7kb.png', 
+    9.8, 9.1, 10.0, 10.0, 9.8, 10.0, 9.8, false, 0
+),
+(
+    '메르세데스-벤츠 EQA', 6790, 7360, 7075.0, '준중형 SUV', '전기', '4.9km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230310_40%2Fauto_1678417319166ILTLw_PNG%2F20230310120147_uBJmlobv.png', 
+    9.9, 9.1, 9.2, 9.8, 9.8, 8.6, 9.4, false, 0
+),
+(
+    '지프 그랜드 체로키 4XE', 9440, 11190, 10315.0, '준대형 SUV', '전기,가솔린,하이브리드', '8.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221123_268%2Fauto_1669181527587ooqg0_PNG%2F20221123143157_qPsubW7l.png', 
+    9.7, 9.4, 9.7, 9.0, 9.7, 7.1, 9.1, false, 0
+),
+(
+    '지프 그랜드 체로키', 7690, 8470, 8080.0, '준대형 SUV', '가솔린', '7.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221216_174%2Fauto_1671168442331T6Shh_PNG%2F20221216142720_xzSPMSYh.png', 
+    9.9, 9.3, 9.8, 9.8, 8.8, 9.2, 9.5, false, 0
+),
+(
+    '아우디 S3 세단', 6137, 6137, 6137.0, '준중형 세단', '가솔린', '10.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221223_135%2Fauto_1671759159225HvA37_PNG%2F20221223103227_AF9SKhy5.png', 
+    9.8, 9.0, 9.0, 9.5, 10.0, 8.5, 9.3, false, 0
+),
+(
+    '아우디 RS7', 17558, 18180, 17869.0, '준대형 세단', '가솔린', '7.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221229_117%2Fauto_1672275105138H8Bf0_PNG%2F20221229095137_IxIrAU4D.png', 
+    10.0, 10.0, 9.3, 10.0, 10.0, 6.7, 9.3, false, 0
+),
+(
+    '아우디 RS6 아반트', 16958, 17550, 17254.0, '준대형 왜건', '가솔린', '7.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221229_1%2Fauto_1672274906157M6lpl_PNG%2F20221229094813_5wJmgESm.png', 
+    9.9, 9.0, 8.9, 9.9, 8.9, 8.7, 9.2, false, 0
+),
+(
+    '링컨 에비에이터', 9285, 10755, 10020.0, '준대형 SUV', '가솔린', '8.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230707_267%2Fauto_1688700529052WivfE_PNG%2F20230707122839_oCGmhSh3.png', 
+    9.8, 9.5, 9.6, 8.9, 9.7, 7.5, 9.2, false, 0
+),
+(
+    '지프 글래디에이터', 7990, 7990, 7990.0, '대형 트럭', '가솔린', '6.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230508_39%2Fauto_1683520084049txEqD_PNG%2F20230508132753_sVd3Kmed.png', 
+    9.1, 7.6, 8.3, 8.4, 9.9, 6.4, 8.3, false, 0
+),
+(
+    '지프 그랜드 체로키 L', 8910, 9880, 9395.0, '준대형 SUV', '가솔린', '7.7km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221123_105%2Fauto_16691804828349UK9B_PNG%2F20221123141427_lpFEr7MB.png', 
+    9.8, 9.2, 9.8, 9.1, 9.9, 7.2, 9.2, false, 0
+),
+(
+    '아우디 e-트론 스포트백', 10228, 12312, 11270.0, '준대형 SUV', '전기', '3.1km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221121_2%2Fauto_1669009695080zTRD3_PNG%2F20221121144808_XLC4WfLf.png', 
+    9.7, 9.4, 9.7, 9.0, 9.7, 7.1, 9.1, false, 0
+),
+(
+    '아우디 e-트론', 9835, 11712, 10773.5, '준대형 SUV', '전기', '3.0km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221121_205%2Fauto_1669009667256tXw8s_PNG%2F20221121144740_m4vKyB97.png', 
+    8.9, 9.1, 9.9, 9.0, 8.9, 9.9, 9.3, false, 0
+),
+(
+    '아우디 A5', 7277, 7277, 7277.0, '중형 쿠페', '가솔린', '10.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221108_143%2Fauto_1667877077661NFo28_PNG%2F20221108121110_qiaxJPD5.png', 
+    9.7, 8.6, 8.0, 9.3, 9.9, 7.7, 8.9, false, 0
+),
+(
+    '아우디 A3 세단', 4232, 4640, 4436.0, '준중형 세단', '가솔린', '13.0km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221114_215%2Fauto_16684158750896anwS_PNG%2F20221114175106_mXD7dPsR.png', 
+    9.7, 8.3, 9.0, 9.3, 9.7, 9.0, 9.2, false, 0
+),
+(
+    '메르세데스-벤츠 AMG EQS', 21600, 21600, 21600.0, '대형 세단', '전기', '3.2km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221110_253%2Fauto_16680456381140idKi_PNG%2F20221110110029_iKwcR2LO.png', 
+    9.9, 7.7, 9.5, 9.7, 8.9, 9.4, 9.2, false, 0
+),
+(
+    '마세라티 그레칼레', 9900, 16900, 13400.0, '중형 SUV', '가솔린', '9.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221117_173%2Fauto_1668654351125MbyRT_PNG%2F20221117120541_kka19Vvs.png', 
+    10.0, 8.8, 9.5, 9.8, 9.8, 8.5, 9.4, false, 0
+),
+(
+    '롤스로이스 팬텀 EWB', 82600, 82600, 82600.0, '대형 세단', '가솔린', '5.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221125_226%2Fauto_1669345402129w6gfg_PNG%2F20221125120309_bJ0DKaXr.png', 
+    9.1, 9.1, 8.3, 8.9, 7.3, 9.5, 8.7, false, 0
+),
+(
+    '롤스로이스 팬텀', 71200, 71200, 71200.0, '대형 세단', '가솔린', '5.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221125_198%2Fauto_1669344146553I2Nki_PNG%2F20221125114217_eFl3hRkq.png', 
+    9.8, 9.1, 10.0, 10.0, 9.8, 10.0, 9.8, false, 0
+),
+(
+    '람보르기니 우루스 S', 29000, 29000, 29000.0, '대형 SUV', '가솔린', '6.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221114_271%2Fauto_16683888057987pf7D_PNG%2F20221114101956_kLPNhlDY.png', 
+    9.9, 8.7, 9.7, 9.4, 10.0, 7.4, 9.2, false, 0
+),
+
+(
+    '현대 그랜저 하이브리드', 4266, 5161, 4713.5, '준대형 세단', '가솔린,하이브리드', '18.0km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221114_264%2Fauto_16684002222241pFVM_PNG%2F20221114133015_LcKLHl4l.png', 
+    9.4, 7.0, 9.4, 8.8, 9.0, 9.2, 8.8, false, 0
+),
+(
+    '현대 그랜저', 3743, 5103, 4423.0, '준대형 세단', 'LPG,가솔린', '11.7km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221114_282%2Fauto_1668400193718E5bBv_PNG%2F20221114132946_7CG0p8bU.png', 
+    9.3, 7.5, 9.3, 8.8, 9.2, 8.1, 8.7, false, 0
+),
+(
+    '페라리 푸로산게', 53000, 60000, 56500.0, '준대형 SUV', '가솔린', '5.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220914_202%2Fauto_1663119551909zDyvG_PNG%2F20220914103902_mgRgKrBG.png', 
+    9.8, 9.5, 9.6, 8.9, 9.7, 7.5, 9.2, false, 0
+),
+(
+    '아우디 S6', 11678, 11678, 11678.0, '준대형 세단', '디젤', '11.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221013_207%2Fauto_1665647379883AwdCB_PNG%2F20221013164933_kf01lNlE.png', 
+    9.9, 8.1, 8.5, 8.6, 9.5, 7.6, 8.7, false, 0
+),
+(
+    '아우디 S4', 8408, 8408, 8408.0, '중형 세단', '가솔린', '9.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221020_50%2Fauto_1666253403357THS3o_PNG%2F20221020170956_99i5vmMD.png', 
+    9.8, 8.3, 8.3, 9.2, 9.7, 7.3, 8.8, false, 0
+),
+(
+    '아우디 Q5 스포트백', 7348, 8000, 7674.0, '중형 SUV', '가솔린,디젤', '13.0km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221011_50%2Fauto_1665464175967A0QCb_PNG%2F20221011135606_e9SUoMTB.png', 
+    9.7, 9.0, 9.0, 9.3, 9.5, 8.5, 9.2, false, 0
+),
+(
+    '아우디 Q5', 7042, 7694, 7368.0, '중형 SUV', '가솔린,디젤', '12.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221011_155%2Fauto_1665457002865SJrAb_PNG%2F20221011115636_AU7LV3gE.png', 
+    9.0, 7.9, 8.1, 7.5, 9.1, 9.7, 8.6, false, 0
+),
+(
+    '아우디 A8 L', 15440, 19742, 17591.0, '대형 세단', '가솔린,디젤', '11.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20211103_85%2Fauto_1635916770064JQ3oc_PNG%2F20211103141917_DICWVJtU.png', 
+    9.9, 7.7, 9.5, 9.7, 8.9, 9.4, 9.2, false, 0
+),
+(
+    '아우디 A6', 7072, 9963, 8517.5, '준대형 세단', '가솔린,디젤', '15.0km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221013_73%2Fauto_1665647354153E3JyP_PNG%2F20221013164907_121QQ1x2.png', 
+    9.6, 9.4, 9.2, 9.0, 9.7, 9.1, 9.3, false, 0
+),
+(
+    '아우디 A5 스포트백', 6095, 7114, 6604.5, '중형 세단', '가솔린,디젤', '15.0km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221028_54%2Fauto_1666941834022auVWi_PNG%2F20221028162346_fnW5aZE8.png', 
+    9.5, 9.1, 9.2, 9.6, 9.2, 9.5, 9.4, false, 0
+),
+(
+    '아우디 A4', 5454, 6778, 6116.0, '중형 세단', '가솔린,디젤', '16.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221020_114%2Fauto_1666253366467sLDuN_PNG%2F20221020170919_8qvxL36u.png', 
+    9.4, 7.0, 9.4, 8.8, 9.0, 9.2, 8.8, false, 0
+),
+(
+    '현대 베뉴', 2146, 2413, 2279.5, '소형 SUV', '가솔린', '13.7km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221013_65%2Fauto_1665622680557bA0CN_PNG%2F20221013095754_XAeWJA5s.png', 
+    9.1, 9.1, 8.6, 8.6, 9.4, 8.9, 9.0, false, 0
+),
+(
+    '메르세데스-벤츠 EQB', 7660, 8200, 7930.0, '준중형 SUV', '전기', '4.1km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221123_106%2Fauto_1669188056678UPBbg_PNG%2F20221123162044_ktYAToIE.png', 
+    9.6, 8.0, 9.2, 9.2, 9.4, 8.4, 9.0, false, 0
+),
+(
+    '기아 EV6 GT', 7200, 7200, 7200.0, '준중형 SUV', '전기', '3.9km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221116_241%2Fauto_1668575274150gspJf_PNG%2F20221116140747_DjwHOaZ5.png', 
+    9.7, 7.7, 8.9, 8.9, 9.6, 8.5, 8.9, false, 0
+),
+(
+    '아우디 S5 스포트백', 8449, 8449, 8449.0, '중형 세단', '가솔린', '9.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221011_267%2Fauto_16654569124598RltI_PNG%2F20221011115506_onIaYJDB.png', 
+    9.8, 7.6, 7.8, 9.0, 10.0, 7.6, 8.6, false, 0
+),
+(
+    '아우디 S5', 9029, 9029, 9029.0, '중형 쿠페', '가솔린', '9.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221011_199%2Fauto_16654568849535odmx_PNG%2F20221011115438_f7S9Pdmg.png', 
+    9.6, 9.4, 9.2, 9.0, 9.7, 9.1, 9.3, false, 0
+),
+(
+    '혼다 오딧세이', 6050, 6050, 6050.0, '대형 RV', '가솔린', '9.0km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230627_54%2Fauto_1687856275659iR8Sm_PNG%2F20230627175716_aKvNGGBr.png', 
+    9.8, 8.6, 9.7, 9.1, 8.5, 6.9, 8.8, false, 0
+),
+(
+    '쉐보레 트래버스', 5640, 6615, 6127.5, '준대형 SUV', '가솔린', '8.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220919_63%2Fauto_1663560413578bItjk_PNG%2F20220919130643_jR52WpAJ.png', 
+    9.8, 8.4, 9.6, 9.0, 9.7, 7.5, 9.0, false, 0
+),
+(
+    '메르세데스-벤츠 EQS', 16390, 19000, 17695.0, '대형 세단', '전기', '3.8km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221123_175%2Fauto_1669188441720vyAm0_PNG%2F20221123162709_pPcRP9DR.png', 
+    9.9, 8.7, 9.7, 9.4, 10.0, 7.4, 9.2, false, 0
+),
+(
+    '메르세데스-벤츠 AMG GT 4도어 쿠페', 15560, 24740, 20150.0, '대형 세단', '가솔린', '8.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221123_82%2Fauto_1669187545605eMlHi_PNG%2F20221123161215_vBY8Y82F.png', 
+    9.7, 8.3, 9.0, 9.3, 9.7, 9.0, 9.2, false, 0
+),
+(
+    '람보르기니 우루스 퍼포만테', 32890, 32890, 32890.0, '대형 SUV', '가솔린', '6.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220824_246%2Fauto_1661315255798SRDn9_PNG%2F20220824132725_J9S3nuep.png', 
+    9.9, 8.7, 9.7, 9.4, 10.0, 7.4, 9.2, false, 0
+),
+(
+    '기아 EV6', 4870, 6230, 5550.0, '준중형 SUV', '전기', '5.6km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220919_73%2Fauto_1663551388897mByay_PNG%2F20220919103622_gv6MIe4D.png', 
+    9.6, 9.4, 9.2, 9.0, 9.7, 9.1, 9.3, false, 0
+),
+(
+    '랜드로버 디스커버리', 9060, 12160, 10610.0, '준대형 SUV', '가솔린,디젤', '10.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220927_137%2Fauto_1664251773908QbLtt_PNG%2F20220927130753_W4V01MHE.png', 
+    9.4, 8.4, 9.5, 8.5, 9.4, 8.5, 9.0, false, 0
+),
+(
+    '페라리296 GTS', 46100, 46101, 46100.5, '스포츠카 컨버터블', '전기,가솔린,하이브리드', '7.7km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220420_2%2Fauto_1650425665135nY5sr_PNG%2F20220420123407_de6ameYY.png', 
+    9.6, 7.7, 9.7, 9.1, 9.7, 8.4, 9.0, false, 0
+),
+(
+    '폭스바겐 골프', 3985, 4140, 4062.5, '준종형 해치백', '디젤', '17.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230712_66%2Fauto_1689134534507FxRro_PNG%2F20230712130204_ZGhmKptK.png', 
+    9.5, 8.7, 8.7, 9.0, 9.4, 9.5, 9.1, false, 0
+),
+(
+    '지프 레니게이드', 4190, 4840, 4515.0, '소형 SUV', '가솔린', '10.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220111_289%2Fauto_1641862133844C4ksS_PNG%2F20220111094841_ewmRQAgw.png', 
+    8.3, 8.1, 7.9, 7.8, 9.8, 6.5, 8.1, false, 0
+),
+(
+    '애스턴마틴 DBX707', 31700, 31700, 31700.0, '대형 SUV', '가솔린', '7.0km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220203_109%2Fauto_1643861221351aydHb_PNG%2F20220203130633_NLTzNUAQ.png', 
+    10.0, 8.0, 10.0, 7.0, 10.0, 8.0, 8.8, false, 0
+),
+(
+    '람보르기니 우라칸', 34000, 34000, 34000.0, '스포츠카 쿠페', '가솔린', '4.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220413_178%2Fauto_1649815015146c9s4M_PNG%2F20220413105641_dMoeIqwp.png', 
+    10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, false, 0
+),
+(
+    'DS 4', 4460, 5160, 4810.0, '준중형 해치백', '디젤', '16.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220802_74%2Fauto_1659426676569CWnSJ_PNG%2F20220802165103_it1cDGam.png', 
+    8.8, 7.8, 8.0, 8.8, 10.0, 9.8, 8.9, false, 0
+),
+(
+    '쉐보레 이쿼녹스', 3145, 4145, 3645.0, '중형 SUV', '가솔린', '11.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220602_14%2Fauto_1654137949416OUUzr_PNG%2F20220602114535_VlRMToMr.png', 
+    9.6, 7.7, 9.7, 9.1, 9.7, 8.4, 9.0, false, 0
+),
+(
+    '푸조 2008', 3700, 4000, 3850.0, '소형 SUV', '디젤', '17.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220718_237%2Fauto_1658110972689LW2dQ_PNG%2F20220718112241_SqMBtLk5.png', 
+    9.7, 8.8, 8.9, 9.1, 9.8, 9.8, 9.4, false, 0
+),
+(
+    'SS모터스 젤라 EV', 4180, 4180, 4180.0, '중형 트럭', '전기', '2.6km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220609_105%2Fauto_1654734930848CMCgY_PNG%2F20220609093518_0YYKOiiQ.png', 
+    10.0, 8.8, 9.5, 9.8, 9.8, 8.5, 9.4, false, 0
+),
+(
+    '쉐보레 타호', 9390, 9500, 9445.0, '대형 SUV', '가솔린', '6.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220112_54%2Fauto_1641959488728JwF6L_PNG%2F20220112125105_mtOyBcVz.png', 
+    9.5, 8.7, 9.5, 8.6, 9.4, 7.0, 8.8, false, 0
+),
+(
+    '코란도 이모션', 3880, 4390, 4135.0, '준중형 SUV', '전기', '4.9km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220110_129%2Fauto_1641773816474n8r2t_PNG%2F20220110091633_Whxi3w6H.png', 
+    9.6, 9.4, 9.2, 9.0, 9.7, 9.1, 9.3, false, 0
+),
+(
+    '르노 마스터', 3685, 3845, 3765.0, '대형 벤', '디젤', '11.0km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221116_220%2Fauto_1668581237695lKiuL_PNG%2F20221116154705_C17pMw9G.png', 
+    9.8, 9.1, 10.0, 10.0, 9.8, 10.0, 9.8, false, 0
+),
+(
+    '페라리 296 GTB', 39800, 39800, 39800.0, '스포츠카 쿠페', '전기,가솔린,하이브리드', '15.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20210625_261%2Fauto_162460113544022AqV_PNG%2F20210625150523_9Ry8aDCc.png', 
+    9.5, 7.7, 9.7, 8.8, 9.2, 9.7, 9.1, false, 0
+),
+(
+    '링컨 코세어', 5930, 5930, 5930.0, '준중형 SUV', '가솔린', '9.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20220811_101%2Fauto_1660195990934MjUK5_PNG%2F20220811143301_3RUOAvSH.png', 
+    9.7, 9.7, 9.7, 8.9, 9.8, 7.6, 9.2, false, 0
+),
+(
+    'DS 3 크로스백 E-텐스', 5790, 5790, 5790.0, '소형 SUV', '전기', '4.9km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20210127_260%2Fauto_1611732778590mL8Ca_PNG%2F20210127163242_u1vqfXHS.png', 
+    9.7, 8.1, 8.3, 9.3, 10.0, 8.0, 8.9, false, 0
+),
+(
+    '아우디 e-트론 GT', 14332, 16632, 15482.0, '준대형 세단', '전기', '3.7km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20211220_44%2Fauto_1639966268076WKd4Y_PNG%2F20211220111050_bIhxdET2.png', 
+    9.6, 7.4, 9.0, 9.2, 10.0, 8.4, 8.9, false, 0
+),
+(
+    '아우디 RS e-트론 GT', 20632, 20632, 20632.0, '준대형 세단', '전기', '3.4km/kWh', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20211220_21%2Fauto_1639966458454vovwl_PNG%2F20211220111403_HkPF6tKF.png', 
+    9.3, 9.7, 8.8, 8.9, 9.1, 9.9, 9.3, false, 0
+),
+(
+    '쉐보레 콜로라도', 4050, 4889, 4469.5, '준대형 트럭', '가솔린', '8.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221206_231%2Fauto_1670316875549d2Pk2_PNG%2F20221206175426_D8EaNW3m.png', 
+    10.0, 8.8, 9.5, 9.8, 9.8, 8.5, 9.4, false, 0
+),
+(
+    'DS 7 크로스백', 5090, 5590, 5340.0, '중형 SUV', '가솔린', '11.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221229_174%2Fauto_1672277521937t42HU_PNG%2F20221229103153_0nnJHaWq.png', 
+    9.3, 8.8, 9.1, 9.2, 9.6, 9.6, 9.3, false, 0
+),
+(
+    'DS 3 크로스백', 4330, 4330, 4330.0, '소형 SUV', '디젤', '15.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20221229_41%2Fauto_1672277300428r1KX9_PNG%2F20221229102809_2BWiW3Lo.png', 
+    9.2, 9.1, 9.6, 8.8, 9.6, 9.8, 9.4, false, 0
+),
+(
+    '롤스로이스 고스트 블랙배지', 55500, 55500, 55500.0, '대형 세단', '가솔린', '5.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20211101_113%2Fauto_16357484159379YW77_PNG%2F20211101153324_BzGM0i3C.png', 
+    10.0, 1.0, 10.0, 10.0, 10.0, 1.0, 7.0, false, 0
+),
+(
+    '로터스 에미라', 14500, 15220, 14860.0, '스포츠카 쿠페', '가솔린', '5.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20210708_254%2Fauto_1625731766681nFWGm_PNG%2F20210708170908_Ah5Ahe1c.png', 
+    9.4, 7.0, 9.4, 8.8, 9.0, 9.2, 8.8, false, 0
+),
+(
+    '레디컬 SR8', 22000, 22000, 22000.0, '스포츠카 컨버터블', '가솔린', '5.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20211027_107%2Fauto_1635323227109QslKh_PNG%2F20211027172650_DZJ1RDYj.png', 
+    9.6, 7.7, 9.7, 9.1, 9.7, 8.4, 9.0, false, 0
+),
+(
+    '레디컬 SR10', 23000, 23000, 23000.0, '스포츠카 컨버터블', '가솔린', '5.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20211027_3%2Fauto_1635323287999Tq18d_PNG%2F20211027172755_THTzK5Qc.png', 
+    9.6, 8.0, 9.2, 9.2, 9.4, 8.4, 9.0, false, 0
+),
+(
+    '레디컬 SR1', 9990, 9990, 9990.0, '스포츠카 컨버터블', '가솔린', '5.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20211027_132%2Fauto_1635322665094mIFUY_PNG%2F20211027171731_BGIJtrLZ.png', 
+    9.1, 7.6, 8.3, 8.4, 9.9, 6.4, 8.3, false, 0
+),
+(
+    '맥라렌 아투라', 29900, 29900, 29900.0, '스포츠카 쿠페', '전기,가솔린,하이브리드', '7.7km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20210217_89%2Fauto_1613527734489mBpm1_PNG%2F20210217110839_27JS4TPx.png', 
+    9.9, 8.7, 9.7, 9.4, 10.0, 7.4, 9.2, false, 0
+),
+(
+    '시트로엥 C5 에어크로스', 3978, 4976, 4477.0, '준중형 SUV', '디젤', '14.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20210127_168%2Fauto_1611733961547h75ui_PNG%2F20210127165222_dbsw6Gcy.png', 
+    9.4, 8.7, 9.2, 8.8, 9.5, 9.4, 9.2, false, 0
+),
+(
+    '시트로엥 C4 칵투스', 3238, 3238, 3238.0, '소형 SUV', '디젤', '15.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20190128_36%2Fauto_1548650997857DAzT2_PNG%2F20190128134945_9qlLT3mK.png', 
+    8.3, 9.0, 7.9, 8.0, 9.8, 9.9, 8.8, false, 0
+),
+(
+    '시트로엥 C3 에어크로스', 2951, 3278, 3114.5, '소형 SUV', '디젤', '14.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20210127_76%2Fauto_1611733331825MAwb3_PNG%2F20210127164154_Tp6iLREG.png', 
+    9.0, 8.9, 9.2, 8.3, 9.6, 9.5, 9.1, false, 0
+),
+(
+    '아우디 S7', 12718, 12718, 12718.0, '준대형 세단', '디젤', '12.0km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20201204_10%2Fauto_16070657441660Ix0p_PNG%2F20201204160854_QmmkDIES.png', 
+    9.9, 9.0, 9.3, 9.0, 10.0, 9.6, 9.5, false, 0
+),
+(
+    '시트로엥 그랜드 C4 스페이스 투어러', 4229, 4585, 4407.0, '준중형 RV', '디젤', '14.5km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20200904_279%2Fauto_1599206068316xXjcI_PNG%2F20200904165418_0KAXWUTA.png', 
+    9.2, 9.1, 9.6, 8.8, 9.6, 9.8, 9.4, false, 0
+),
+(
+    '롤스로이스 고스트 EWB', 52300, 52300, 52300.0, '대형 세단', '가솔린', '5.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20230425_172%2Fauto_1682396812009HGq7A_PNG%2F20230425132637_8NRTlkIU.png', 
+    10, 1, 10, 10, 10, 1, 7, false, 0
+),
+(
+    '롤스로이스 고스트', 47100, 47100, 47100.0, '대형 세단', '가솔린', '5.7km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20200907_93%2Fauto_1599449881946XI0v0_PNG%2F20200907123752_aD2TePUk.png', 
+    10, 1, 10, 10, 10, 9.7, 8.5, false, 0
+),
+(
+    '람보르기니 우라칸 에보 스파이더', 32890, 38940, 35915.0, '스포츠카 컨버터블', '가솔린', '6.2km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20200811_151%2Fauto_1597105742975X0avX_PNG%2F20200811092853_1n6q1uEu.png', 
+    10, 10, 10, 10, 10, 10, 10, false, 0
+),
+(
+    '페라리 로마', 32000, 32000, 32000.0, '스포츠카 쿠페', '가솔린', '7.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20191114_7%2Fauto_1573697173150mca10_PNG%2F20191114110552_fr9pEfRa.png', 
+    8.5, 7.5, 8.5, 8, 10, 8.5, 8.5, false, 0
+),
+(
+    '페라리 812 GTS', 51500, 51500, 51500.0, '스포츠카 컨버터블', '가솔린', '5.3km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20190916_126%2Fauto_1568615711177lytOR_PNG%2F20190916153456_rqGL6ZiH.png', 
+    9.8, 9.5, 9.6, 8.9, 9.7, 7.5, 9.2, false, 0
+),
+(
+    '애스턴마틴 DBX', 24800, 24800, 24800.0, '대형 SUV', '가솔린', '6.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20191120_200%2Fauto_1574227715020cBrJu_PNG%2F20191120142814_nCwgUnMj.png', 
+    10, 8, 10, 8, 10, 8, 9, false, 0
+),
+(
+    '코닉세그 제메라', 220000, 220000, 220000.0, '스포츠카 쿠페', '가솔린,하이브리드', '5.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20200304_203%2Fauto_1583299980718Mcgym_PNG%2F20200304143250_m37SMiCd.png', 
+    9.8, 8.7, 7.8, 9.8, 6.9, 7.8, 8.5, false, 0
+),
+(
+    '애스턴마틴 발할라', 150000, 170000, 160000.0, '스포츠카 쿠페', '가솔린,하이브리드', '5.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20210716_202%2Fauto_1626395878877pLEAp_PNG%2F20210716093756_A2qHiTN0.png', 
+    8.9, 8.4, 9.3, 8.7, 9.8, 10, 9.2, false, 0
+),
+(
+    '롤스로이스 컬리넌 블랙배지', 53900, 53900, 53900.0, '대형 SUV', '가솔린', '5.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20200904_193%2Fauto_1599199357749ksf7n_PNG%2F20200904150235_ZAkR0wr0.png', 
+    9.3, 9.5, 9.7, 8.9, 9, 7.8, 9, false, 0
+),
+(
+    '맥라렌 GT', 28200, 28200, 28200.0, '스포츠카 쿠페', '가솔린', '8.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20190926_125%2Fauto_1569482589787O8gva_PNG%2F20190926162257_V5VA1TJe.png', 
+    8.3, 9, 7.9, 8, 9.8, 9.9, 8.8, false, 0
+),
+(
+    '동풍소콘 펜곤 ix5', 2380, 2380, 2380.0, '중형 SUV', '가솔린', '9.8km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20191004_60%2Fauto_15701612805014klUm_PNG%2F20191004125425_UYB1Ea5L.png', 
+    8.1, 8.9, 8.2, 7.7, 8.8, 6, 8, false, 0
+),
+(
+    '람보르기니 우라칸 에보', 29900, 34540, 32220.0, '스포츠카 쿠페', '가솔린', '6.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20190730_287%2Fauto_1564469668966PYYpe_PNG%2F20190730155414_7zNf0ryR.png', 
+    10, 9.5, 10, 10, 9.8, 8.5, 9.6, false, 0
+),
+(
+    '메르세데스-벤츠 스프린터', 9000, 9570, 9285.0, '대형 벤', '디젤', '6.9km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20191210_62%2Fauto_1575950413008A1C3W_PNG%2F20191210130011_5TmbnUqD.png', 
+    9, 9.9, 7, 7.8, 8.9, 9.8, 8.7, false, 0
+),
+(
+    '롤스로이스 컬리넌', 46900, 46900, 46900.0, '대형 SUV', '가솔린', '5.6km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20200904_160%2Fauto_1599199337795HklQv_PNG%2F20200904150215_0YYl4f1L.png', 
+    9.8, 8.5, 9.4, 7.9, 8.9, 9.8, 9.1, false, 0
+),
+(
+    '페라리 포르토피노', 29900, 29900, 29900.0, '스포츠카 컨버터블', '가솔린', '8.1km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20180622_214%2Fauto_1529633100943cJ3VW_PNG%2F20180622110451_AkLZkxtW.png', 
+    10, 9.6, 9.6, 10, 10, 10, 9.9, false, 0
+),
+(
+    '로터스 엘리스 S', 8350, 8350, 8350.0, '스포츠카 컨버터블', '가솔린', '7.5ℓ/100km', 'https://search.pstatic.net/common?quality=75&direct=true&src=https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20180622_214%2Fauto_1529633100943cJ3VW_PNG%2F20180622110451_AkLZkxtW.png', 
+    9.7, 9.5, 8.7, 8.7, 8.9, 8.9, 9.1, false, 0
+),
+(
+    '페라리 812 슈퍼패스트', 47100, 47100, 47100.0, '스포츠카 쿠페', '가솔린', '5.4km/ℓ', 'https://search.pstatic.net/common?quality=75&direct=true&src=http%3A%2F%2Fimgauto.naver.com%2F20170608_117%2Fauto_1496911488138wGROI_PNG%2F20170608174428_TJ7HJPyr.png', 
+    9, 8.3, 7.9, 8.9, 9.8, 9.7, 8.9, false, 0
+);
