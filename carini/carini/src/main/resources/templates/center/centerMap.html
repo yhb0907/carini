@@ -2,23 +2,24 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-   <meta charset="utf-8">
-   <title>centerMap.html</title>
-   <link rel="stylesheet" href="/css/centerMap.css">
-   <!-- <link rel="stylesheet" href="../js/carini_script.js"> -->
+<meta charset="utf-8">
+<title>centerMap.html</title>
+<link rel="stylesheet" href="/css/centerMap.css">
+<!-- <link rel="stylesheet" href="../js/carini_script.js"> -->
 
-   <link rel="stylesheet" href="/css/base/base.css">
-   <link rel="stylesheet" href="/css/base/inquiry.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6176b21dbade8671d06887982700f4b5"></script>
-   <script th:inline="javascript">
-      var agencies = '[[${agency}]]';
-      var agenciesArray = JSON.parse(agencies);
-   </script>
-   <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"
-      integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4"
-      crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/css/base/base.css">
+<link rel="stylesheet" href="/css/base/inquiry.css">
+<script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript"
+   src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6176b21dbade8671d06887982700f4b5"></script>
+<script th:inline="javascript">
+   var agencies = '[[${agency}]]';
+   var agenciesArray = JSON.parse(agencies);
+</script>
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"
+   integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4"
+   crossorigin="anonymous"></script>
 </head>
 
 <style>
