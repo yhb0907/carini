@@ -753,7 +753,12 @@ public class AdminController {
       Pageable pageable = PageRequest.of(curPage, rowSizePerPage);
        
        Page<Car> pagedResult = modelService.filterCars(pageable, filterMinPrice, filterMaxPrice, filterSize, filterFuel, searchWord, carSort, exCar);
-
+       
+       if(exCar) {
+	    	filterMinPrice = 50000L;
+	    	filterMaxPrice = 10000000L;
+	    }
+       
        int totalRowCount  = (int)pagedResult.getNumberOfElements();
        int totalPageCount = pagedResult.getTotalPages();
        int pageSize       = pagingInfo.getPageSize();
@@ -789,6 +794,7 @@ public class AdminController {
         model.addAttribute("fs", filterSize);
         model.addAttribute("ff", filterFuel);
         model.addAttribute("cs", carSort);
+        model.addAttribute("exCar", exCar.toString());
        model.addAttribute("carList", pagedResult.getContent());
        
        return "admin/modelList";
